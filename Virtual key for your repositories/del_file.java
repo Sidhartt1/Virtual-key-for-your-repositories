@@ -24,8 +24,15 @@ public class del_file
 		System.out.println();
 		String file_path = path+file_name;
 		File f = new File(file_path);
-		f.delete();
-		System.out.println("File successfully deleted!!");
+		if(f.exists())
+		{
+			f.delete();
+			System.out.println("File successfully deleted!!");
+		}
+		else
+		{
+			System.out.println("File Not Found");
+		}
 		System.out.println("---------------------------------------------------------------------");
 	}
 }
