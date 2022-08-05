@@ -1,7 +1,7 @@
 package File_handle;
 import java.io.IOException;
 import java.util.Scanner;
-public class File_handling 
+public class Main_class 
 {
 	public static void main(String[] args) throws IOException
 	{
